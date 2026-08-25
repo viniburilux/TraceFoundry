@@ -6,6 +6,14 @@
 
 <p align="center"><strong>Evidence infrastructure for high-stakes discovery.</strong><br />Find what matters. Prove why it matters. Know what is still missing.</p>
 
+> **TraceFoundry is the public research infrastructure layer of LUXVERSO.**
+>
+> **TraceFoundry é a camada pública de infraestrutura de investigação do LUXVERSO.**
+
+[LUXVERSO](https://github.com/viniburilux/LuxVerso) é o ecossistema independente de Research & Build criado e conduzido por [Vinícius Buri Lux](https://github.com/viniburilux). Research & Build é o modo de operação do ecossistema — entender, representar, projetar, construir, testar e aplicar — e o TraceFoundry materializa sua camada pública de discovery, evidência e proveniência.
+
+Para entender a relação entre a infraestrutura pública, os projetos e a fronteira com a memória privada, leia [TraceFoundry e LUXVERSO](RELATIONSHIP_TO_LUXVERSO.md).
+
 TraceFoundry is a metadata-first discovery engine for teams that need to move from fragmented public information to a **defensible next decision**. It connects scientific datasets, papers, patents and research assets across sources, normalizes their metadata, applies explicit eligibility rules, records why candidates were selected or rejected, and produces a versioned manifest that can be reviewed before anyone spends time or money on acquisition, analysis or partnership.
 
 The project was formerly named **OI Discovery**. The technical namespace remains `oi_discovery` for compatibility; the public product identity is now TraceFoundry.
