@@ -48,6 +48,7 @@ Investigation state
 Research move
        ↓
 Next defensible action
+```
 
 The goal is not simply to find information.
 
@@ -60,29 +61,28 @@ It is designed for investigations where being able to explain why a conclusion o
 
 ---
 
-The problem
+## The problem
 
 Complex research rarely fails because information does not exist.
 
 It fails because information is:
 
-fragmented across sources;
+- fragmented across sources
 
-represented under incompatible identifiers;
+- represented under incompatible identifiers
 
-difficult to connect;
+- difficult to connect
 
-mixed with duplicates and false positives;
+- mixed with duplicates and false positives
 
-detached from its provenance;
+- detached from its provenance
 
-interpreted without clearly separating fact from inference;
+- interpreted without clearly separating fact from inference
 
-missing explicit records of what was rejected;
+- missing explicit records of what was rejected
 
-unable to show what remains unknown;
-
-difficult to revisit after the original investigation.
+- unable to show what remains unknown
+- difficult to revisit after the original investigation.
 
 
 A search result is not yet evidence.
@@ -100,7 +100,7 @@ TraceFoundry keeps these distinctions visible.
 
 ---
 
-From information to investigation
+## From information to investigation
 
 Traditional search answers:
 
@@ -149,7 +149,7 @@ This is the core idea behind TraceFoundry.
 
 ---
 
-The investigation model
+## The investigation model
 
 TraceFoundry deliberately separates different epistemic states.
 
@@ -159,13 +159,13 @@ What is directly supported by an observed source.
 
 Examples:
 
-a paper exists;
+- a paper exists
 
-an author is associated with a work;
+- an author is associated with a work
 
-a patent record exists;
+- a patent record exists
 
-a dataset reports a particular version;
+- a dataset reports a particular version
 
 a source exposes a particular metadata field.
 
@@ -178,13 +178,13 @@ What can reasonably be derived by connecting multiple observations.
 
 Examples:
 
-relationships between entities;
+- relationships between entities
 
-recurring institutional patterns;
+- recurring institutional patterns
 
-cross-source connections;
+- cross-source connections
 
-clusters of related research;
+- clusters of related research
 
 convergence between independent evidence.
 
@@ -199,11 +199,11 @@ A direction suggested by the evidence but not yet demonstrated.
 
 Examples:
 
-an unexplored research direction;
+- an unexplored research direction
 
-a potentially relevant technology;
+- a potentially relevant technology
 
-a possible connection between actors;
+- a possible connection between actors
 
 a promising but insufficiently supported opportunity.
 
@@ -220,11 +220,11 @@ A dependency prevents investigation from continuing.
 
 Examples:
 
-rate limits;
+- rate limits
 
-missing credentials;
+- missing credentials
 
-inaccessible source;
+- inaccessible source
 
 unavailable metadata.
 
@@ -240,7 +240,7 @@ This distinction matters because uncertainty is information too.
 
 ---
 
-What TraceFoundry does
+## What TraceFoundry does
 
 01 — Discover
 
@@ -266,17 +266,17 @@ The architecture is extensible to additional sources.
 
 Convert source-specific responses into canonical records with:
 
-stable identifiers;
+- stable identifiers
 
-metadata;
+- metadata
 
-URLs;
+- URLs
 
-versions;
+- versions
 
-source information;
+- source information
 
-warnings;
+- warnings
 
 provenance.
 
@@ -290,21 +290,21 @@ This makes heterogeneous sources comparable without pretending they are identica
 
 Represent relationships between:
 
-datasets;
+- datasets
 
-papers;
+- papers
 
-authors;
+- authors
 
-institutions;
+- institutions
 
-patents;
+- patents
 
-inventors;
+- inventors
 
-assignees;
+- assignees
 
-research assets;
+- research assets
 
 investigations.
 
@@ -322,11 +322,11 @@ Candidates are evaluated through explicit rules.
 
 TraceFoundry records:
 
-why an item was selected;
+- why an item was selected
 
-why it was rejected;
+- why it was rejected
 
-what constraint caused rejection;
+- what constraint caused rejection
 
 what evidence supported the decision.
 
@@ -340,13 +340,13 @@ There is no requirement to hide the decision process behind an opaque ranking sc
 
 "No eligible result" is different from:
 
-source failure;
+- source failure
 
-rate limiting;
+- rate limiting
 
-missing credentials;
+- missing credentials
 
-incomplete metadata;
+- incomplete metadata
 
 blocked dependency.
 
@@ -395,15 +395,15 @@ It records what remains unresolved.
 
 TraceFoundry can represent:
 
-missing evidence;
+- missing evidence
 
-unresolved entities;
+- unresolved entities
 
-contradictory observations;
+- contradictory observations
 
-insufficient support;
+- insufficient support
 
-blocked sources;
+- blocked sources
 
 unanswered questions.
 
@@ -419,11 +419,11 @@ A ResearchMove represents a proposed next investigation step.
 
 It records:
 
-the proposed action;
+- the proposed action
 
-why the action is justified;
+- why the action is justified
 
-the expected observation;
+- the expected observation
 
 stop criteria.
 
@@ -435,7 +435,7 @@ It is to make the next defensible move explicit and reviewable.
 
 ---
 
-The TraceFoundry loop
+## The TraceFoundry loop
 
 A TraceFoundry investigation can be understood as a loop:
 
@@ -474,21 +474,21 @@ The investigation can therefore evolve instead of ending at a search result.
 
 ---
 
-Where it fits
+## Where it fits
 
 TraceFoundry is designed for:
 
-Domain	Investigation question
-
-🔬 Scientific scouting	Which technologies, datasets, papers or research groups deserve attention first?
-🧪 R&D intelligence	What evidence supports a technical direction?
-🧭 Technology intelligence	Which actors, technologies and relationships are emerging?
-📑 Technical due diligence	What is actually supported by the available evidence?
-💡 Innovation	Which opportunities are supported, which are speculative, and what should be tested next?
-🤝 Partner discovery	Which institutions, researchers or companies appear connected to the problem?
-⚖️ Patent intelligence	Which families, classifications, inventors and assignees appear in a reproducible investigation?
-🌱 Sustainability & clean tech	Which public evidence supports a technology, process or hypothesis?
-🧠 Research operations	What has already been investigated, rejected, blocked or left unresolved?
+| Domain | Investigation question |
+| --- | --- |
+| Scientific scouting | Which technologies, datasets, papers or research groups deserve attention first? |
+| R&D intelligence | What evidence supports a technical direction? |
+| Technology intelligence | Which actors, technologies and relationships are emerging? |
+| Technical due diligence | What is actually supported by the available evidence? |
+| Innovation | Which opportunities are supported, which are speculative, and what should be tested next? |
+| Partner discovery | Which institutions, researchers or companies appear connected to the problem? |
+| Patent intelligence | Which families, classifications, inventors and assignees appear in a reproducible investigation? |
+| Sustainability & clean tech | Which public evidence supports a technology, process or hypothesis? |
+| Research operations | What has already been investigated, rejected, blocked or left unresolved? |
 
 
 The domain can change.
@@ -500,7 +500,7 @@ provenance + evidence + relationships + uncertainty + next action.
 
 ---
 
-What makes TraceFoundry different
+## What makes TraceFoundry different
 
 The differentiation is not:
 
@@ -541,7 +541,7 @@ The investigation can end with a proposed Research Move, not merely a pile of do
 
 ---
 
-A different kind of output
+## A different kind of output
 
 A conventional discovery workflow might produce:
 
@@ -575,35 +575,35 @@ That is the difference between retrieval and investigation infrastructure.
 
 ---
 
-Public core
+## Public core
 
 TraceFoundry is intentionally designed as a public infrastructure layer.
 
 The public core includes:
 
-source adapters;
+- source adapters
 
-canonical metadata contracts;
+- canonical metadata contracts
 
-deterministic selection;
+- deterministic selection
 
-provenance;
+- provenance
 
-manifests;
+- manifests
 
-investigation contracts;
+- investigation contracts
 
-evidence and claim structures;
+- evidence and claim structures
 
-Research Moves;
+- Research Moves
 
-reproducible fixtures;
+- reproducible fixtures
 
-testing infrastructure;
+- testing infrastructure
 
-scientific staging guidance;
+- scientific staging guidance
 
-claim-audit guidance;
+- claim-audit guidance
 
 publication workflow.
 
@@ -612,9 +612,9 @@ The public core is metadata-only by default.
 
 It does not download scientific datasets or deserialize formats such as:
 
-pickle;
+- pickle
 
-NWB;
+- NWB
 
 HDF5.
 
@@ -626,7 +626,7 @@ It does not pretend that metadata alone proves scientific validity.
 
 ---
 
-Public infrastructure, private research
+## Public infrastructure, private research
 
 TraceFoundry is the reusable public infrastructure layer of LUXVERSO.
 
@@ -652,13 +652,13 @@ Private research can generate candidates, observations and discoveries.
 
 Public work can expose:
 
-infrastructure;
+- infrastructure
 
-reproducible evidence;
+- reproducible evidence
 
-demonstrations;
+- demonstrations
 
-methodologies;
+- methodologies
 
 shareable knowledge.
 
@@ -668,7 +668,7 @@ The boundary prevents private research state from being confused with public evi
 
 ---
 
-Architecture
+## Architecture
 
 At its core:
 
@@ -697,14 +697,14 @@ The architecture intentionally separates discovery, representation, evidence, in
 
 ---
 
-Current source coverage
+## Current source coverage
 
-Adapter	Mode	Credential	Typical use
-
-DANDI	Metadata-only live queries	No	Neurophysiology and organoid dataset discovery
-Zenodo	Metadata-only live queries	No	Research records, datasets and artifacts
-OpenAlex	Metadata-only live queries	No	Papers, authors, institutions and citation context
-PatentsView	Offline normalization + conditional live queries	PATENTSVIEW_API_KEY	Patent metadata, classifications, inventors, assignees and families
+| Adapter | Mode | Credential | Typical use |
+| --- | --- | --- | --- |
+| DANDI | Metadata-only live queries | No | Neurophysiology and organoid dataset discovery |
+| Zenodo | Metadata-only live queries | No | Research records, datasets and artifacts |
+| OpenAlex | Metadata-only live queries | No | Papers, authors, institutions and citation context |
+| PatentsView | Offline normalization + conditional live queries | `PATENTSVIEW_API_KEY` | Patent metadata, classifications, inventors, assignees and families |
 
 
 The architecture is intentionally source-agnostic.
@@ -714,7 +714,7 @@ New sources can implement the adapter contract without changing the core investi
 
 ---
 
-Five-minute first run
+## Five-minute first run
 
 python3 -m venv .venv
 . .venv/bin/activate
@@ -741,7 +741,7 @@ so the result can be inspected before controlled acquisition.
 
 ---
 
-Patent metadata
+## Patent metadata
 
 For PatentsView, provide the credential explicitly:
 
@@ -758,7 +758,7 @@ PYTHONPATH=src python scripts/oi_discover.py \
 
 ---
 
-Linking to private research systems
+## Linking to private research systems
 
 A public manifest can be handed to a private memory or research system without automatically writing to its database:
 
@@ -773,7 +773,7 @@ This preserves the separation between public infrastructure and private research
 
 ---
 
-Validation
+## Validation
 
 Run the offline suite without credentials or network access:
 
@@ -787,43 +787,35 @@ PYTHONPATH=src python tests/run_cross_domain_live_tests.py
 
 The repository includes:
 
-Test Matrix
-
-Cross-Domain Results
-
-Benchmark v0
-
-Architecture
-
-Investigation Contracts
-
-Scientific Staging Playbook
-
-Claim Audit Starter Kit
-
-Publication Pipeline
-
-Commercial Positioning
+- [Test Matrix](docs/TEST_MATRIX.md)
+- [Cross-Domain Results](docs/CROSS_DOMAIN_TESTS.md)
+- [Benchmark v0](docs/BENCHMARK_V0_RESULTS.md)
+- [Architecture](docs/ARCHITECTURE.md)
+- [Investigation Contracts](docs/INVESTIGATION.md)
+- [Scientific Staging Playbook](docs/SCIENTIFIC_STAGING_PLAYBOOK.md)
+- [Claim Audit Starter Kit](docs/CLAIM_AUDIT_PLAYBOOK.md)
+- [Publication Pipeline](docs/PUBLICATION_PIPELINE.md)
+- [Commercial Positioning](docs/POSITIONING.md)
 
 
 
 ---
 
-What TraceFoundry does not claim
+## What TraceFoundry does not claim
 
 TraceFoundry does not claim that:
 
-metadata proves scientific validity;
+- metadata proves scientific validity
 
-a dataset is automatically suitable for a research hypothesis;
+- a dataset is automatically suitable for a research hypothesis
 
-a paper proves a technology works;
+- a paper proves a technology works
 
-an inferred relationship is necessarily causal;
+- an inferred relationship is necessarily causal
 
-a candidate is automatically a validated asset;
+- a candidate is automatically a validated asset
 
-an LLM-generated statement is true merely because it sounds plausible;
+- an LLM-generated statement is true merely because it sounds plausible
 
 the system replaces expert judgment.
 
@@ -837,42 +829,42 @@ Instead:
 
 ---
 
-Maturity
+## Maturity
 
 The public core is currently a functional and demonstrable research infrastructure.
 
 The following capabilities exist in the public repository:
 
-source adapters;
+- source adapters
 
-canonical records;
+- canonical records
 
-deterministic selection;
+- deterministic selection
 
-provenance;
+- provenance
 
-reproducible manifests;
+- reproducible manifests
 
-metadata-only tests;
+- metadata-only tests
 
-investigation contracts;
+- investigation contracts
 
-evidence and claim representation;
+- evidence and claim representation
 
-Research Moves;
+- Research Moves
 
 cross-domain fixtures.
 
 
 What remains to be demonstrated empirically is the magnitude of the operational benefit:
 
-how much investigation time is reduced;
+- how much investigation time is reduced
 
-how much ambiguity is removed;
+- how much ambiguity is removed
 
-whether decision quality improves;
+- whether decision quality improves
 
-how much rework is avoided;
+- how much rework is avoided
 
 whether teams are willing to pay for the capability.
 
@@ -882,7 +874,7 @@ Those are validation questions, not claims.
 
 ---
 
-Roadmap
+## Roadmap
 
 The next product gate is not simply:
 
@@ -898,21 +890,21 @@ The more important question is:
 
 Planned extensions include:
 
-stronger entity resolution;
+- stronger entity resolution
 
-cross-source deduplication;
+- cross-source deduplication
 
-richer claims/evidence graphs;
+- richer claims/evidence graphs
 
-readiness gates;
+- readiness gates
 
-paper-to-code relationships;
+- paper-to-code relationships
 
-expanded investigation state;
+- expanded investigation state
 
-private research-state integration;
+- private research-state integration
 
-broader domain adapters;
+- broader domain adapters
 
 controlled value tests.
 
@@ -920,7 +912,7 @@ controlled value tests.
 
 ---
 
-The core idea
+## The core idea
 
 TraceFoundry is built around a simple principle:
 
@@ -955,7 +947,7 @@ That trail is the infrastructure.
 
 ---
 
-Bring a difficult question
+## Bring a difficult question
 
 > Bring a difficult discovery question.
 
@@ -966,33 +958,31 @@ Leave with a reviewable evidence map, explicit gaps and a next action you can de
 
 ---
 
-Contributing
+## Contributing
 
 Contributions are welcome when they preserve the core principles:
 
-metadata-only by default;
+- metadata-only by default
 
-explicit provenance;
+- explicit provenance
 
-deterministic selection;
+- deterministic selection
 
-negative evidence as a valid result;
+- negative evidence as a valid result
 
-explicit epistemic states;
-
-reviewable investigation;
-
-no scientific conclusion without supporting evidence.
+- explicit epistemic states
+- reviewable investigation
+- no scientific conclusion without supporting evidence.
 
 
-Start with CONTRIBUTING.md and read ARCHITECTURE.md before adding a source adapter.
+Start with [CONTRIBUTING.md](CONTRIBUTING.md) and read [ARCHITECTURE.md](docs/ARCHITECTURE.md) before adding a source adapter.
 
 
 ---
 
-License
+## License
 
-The public core is released under the MIT License.
+The public core is released under the [MIT License](LICENSE).
 
 Datasets, papers, external APIs and private research artifacts remain subject to their own terms.
 
@@ -1003,4 +993,3 @@ Datasets, papers, external APIs and private research artifacts remain subject to
   <strong>TraceFoundry</strong><br />
   Evidence infrastructure for complex investigation.
 </p>
-```
