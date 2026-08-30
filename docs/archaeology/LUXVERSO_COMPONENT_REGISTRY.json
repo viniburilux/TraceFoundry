@@ -1,0 +1,292 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-30T02:30:00Z",
+    "method": "Code archaeology across 10 repos (7 public + 2 private + 1 analysis archive)",
+    "agent": "Hermes Agent v0.19.0",
+    "repos_analyzed": {
+      "public": [
+        "Lux-Radar",
+        "TraceFoundry",
+        "cmotp-replication",
+        "fractal-seed-001-cmaf",
+        "LuxVerso-Semantic-Convergence-Study",
+        "ghostworks",
+        "ghostworks-atlas",
+        "TTI_Brazil_2017_2024",
+        "viniburilux.github.io",
+        "inteligencia-biotecnologica",
+        "organoid-intelligence",
+        "apda-framework"
+      ],
+      "private": [
+        "Lux-Lab",
+        "LuxMemory"
+      ]
+    }
+  },
+  "machines": [
+    {
+      "id": "M01",
+      "name": "LuxMemory — Operating Memory and Investigation Graph",
+      "type": "machine",
+      "repository": "viniburilux/LuxMemory",
+      "scope": "cross-domain",
+      "status": "active",
+      "components": [
+        "memory.schema.json",
+        "capability.schema.json",
+        "retrieve.py",
+        "ingest.py",
+        "app.py",
+        "build_skills.py",
+        "consult_resume.py",
+        "sync_capabilities_sqlite.py",
+        "conversation-memory/",
+        "transformation_movements/",
+        "data/",
+        "docs/CAPABILITY_MAP.md",
+        "docs/CAPABILITY_LAYER_DIAGNOSIS.md",
+        "docs/PORTFOLIO_ARQUEOLOGIA_ATIVOS_E_OPORTUNIDADES.md",
+        "docs/PORTFOLIO_FAMILIAS.md"
+      ],
+      "key_metrics": {
+        "assets": 133,
+        "capabilities": 25,
+        "graph_nodes": 3412,
+        "graph_edges": 12693,
+        "cycles_documented": 18
+      }
+    },
+    {
+      "id": "M02",
+      "name": "Lux-Lab — Execution Laboratory",
+      "type": "machine",
+      "repository": "viniburilux/Lux-Lab",
+      "scope": "execution",
+      "status": "active",
+      "components": [
+        "asie_experiment_v0/",
+        "asie_extraction_v1/",
+        "data_intelligence/",
+        "document_acquisition_v0/",
+        "ghostworks_explorer/",
+        "ghostworks_audit/",
+        "patent_asie_cycle_2026_08_21/",
+        "pncp_bahia_intelligence/",
+        "sigmine_mineral_retrieval/",
+        "story_hunter/",
+        "virgin_domain_probes/",
+        "templates/"
+      ],
+      "subprojects": [
+        {
+          "id": "LAB01",
+          "name": "Data Intelligence Agro MVP",
+          "status": "active",
+          "code": "data_intelligence/"
+        },
+        {
+          "id": "LAB02",
+          "name": "Document Acquisition Layer V0",
+          "status": "active",
+          "code": "document_acquisition_v0/"
+        },
+        {
+          "id": "LAB03",
+          "name": "ASIE Experiment V0",
+          "status": "active",
+          "code": "asie_experiment_v0/"
+        },
+        {
+          "id": "LAB04",
+          "name": "Patents ASIE Cycle 2026-08-21",
+          "status": "active",
+          "code": "patent_asie_cycle_2026_08_21/"
+        },
+        {
+          "id": "LAB05",
+          "name": "PNCP Bahia Intelligence",
+          "status": "active",
+          "code": "pncp_bahia_intelligence/"
+        },
+        {
+          "id": "LAB06",
+          "name": "SIGMINE Mineral Retrieval",
+          "status": "active",
+          "code": "sigmine_mineral_retrieval/"
+        },
+        {
+          "id": "LAB07",
+          "name": "Virgin Domain Probes",
+          "status": "active",
+          "code": "virgin_domain_probes/"
+        },
+        {
+          "id": "LAB08",
+          "name": "GhostWorks Explorer",
+          "status": "empty",
+          "code": "ghostworks_explorer/"
+        },
+        {
+          "id": "LAB09",
+          "name": "GhostWorks Audit",
+          "status": "empty",
+          "code": "ghostworks_audit/"
+        },
+        {
+          "id": "LAB10",
+          "name": "Story Hunter",
+          "status": "empty",
+          "code": "story_hunter/"
+        }
+      ]
+    },
+    {
+      "id": "M03",
+      "name": "TraceFoundry — Public Evidence Infrastructure",
+      "type": "machine/subsystem",
+      "repository": "viniburilux/TraceFoundry",
+      "scope": "evidence_protocol",
+      "status": "active",
+      "components": [
+        "oi_discovery/investigation.py",
+        "oi_discovery/models.py",
+        "oi_discovery/manifest.py",
+        "oi_discovery/query.py",
+        "oi_discovery/selection.py",
+        "oi_discovery/evaluation.py",
+        "oi_discovery/bridge.py",
+        "oi_discovery/registry.py",
+        "oi_discovery/adapters/"
+      ]
+    },
+    {
+      "id": "M04",
+      "name": "Lux-Radar — Opportunity Intelligence",
+      "type": "machine",
+      "repository": "viniburilux/Lux-Radar",
+      "scope": "acquisition",
+      "status": "active",
+      "components": [
+        "scripts/quality_layer.py",
+        "scripts/build_release.py",
+        "scripts/environmental_signals.py",
+        "scripts/wave2_collectors.py"
+      ]
+    },
+    {
+      "id": "M05",
+      "name": "GhostWorks — Territorial Intelligence Engine",
+      "type": "machine",
+      "repository": "viniburilux/ghostworks + ghostworks-atlas + TTI_Brazil_2017_2024",
+      "scope": "domain_territorial",
+      "status": "active"
+    },
+    {
+      "id": "M06",
+      "name": "Research Methodology Suite",
+      "type": "methodology",
+      "repositories": [
+        "viniburilux/cmotp-replication",
+        "viniburilux/fractal-seed-001-cmaf",
+        "viniburilux/LuxVerso-Semantic-Convergence-Study"
+      ],
+      "scope": "research",
+      "status": "active"
+    },
+    {
+      "id": "M07",
+      "name": "Public Transparency BA",
+      "type": "subsystem",
+      "repositories": [
+        "explorador-dados-bahia",
+        "monitor-gastos-pncp",
+        "gastos-reais-ba",
+        "gastos-eventos-ba",
+        "rede-artistas-bahia-2025",
+        "Radar-Contratos-BA"
+      ],
+      "scope": "domain_transparency",
+      "status": "active"
+    }
+  ],
+  "components_found": [
+    {
+      "name": "ingest.py",
+      "path": "src/ingest.py",
+      "repo": "LuxMemory",
+      "lines": 229,
+      "type": "src"
+    },
+    {
+      "name": "sync_capabilities_sqlite.py",
+      "path": "src/sync_capabilities_sqlite.py",
+      "repo": "LuxMemory",
+      "lines": 51,
+      "type": "src"
+    },
+    {
+      "name": "build_skills.py",
+      "path": "src/build_skills.py",
+      "repo": "LuxMemory",
+      "lines": 115,
+      "type": "src"
+    },
+    {
+      "name": "app.py",
+      "path": "src/app.py",
+      "repo": "LuxMemory",
+      "lines": 145,
+      "type": "src"
+    },
+    {
+      "name": "consult_resume.py",
+      "path": "src/consult_resume.py",
+      "repo": "LuxMemory",
+      "lines": 163,
+      "type": "src"
+    },
+    {
+      "name": "retrieve.py",
+      "path": "src/retrieve.py",
+      "repo": "LuxMemory",
+      "lines": 301,
+      "type": "src"
+    },
+    {
+      "name": "build_latent_signal_transformations.py",
+      "path": "conversation-memory/scripts/build_latent_signal_transformations.py",
+      "repo": "LuxMemory/conversation-memory",
+      "lines": 427,
+      "type": "conversation_memory"
+    },
+    {
+      "name": "latent_signals_archaeology.py",
+      "path": "conversation-memory/scripts/latent_signals_archaeology.py",
+      "repo": "LuxMemory/conversation-memory",
+      "lines": 619,
+      "type": "conversation_memory"
+    },
+    {
+      "name": "build_latent_signal_trajectories.py",
+      "path": "conversation-memory/scripts/build_latent_signal_trajectories.py",
+      "repo": "LuxMemory/conversation-memory",
+      "lines": 438,
+      "type": "conversation_memory"
+    },
+    {
+      "name": "build_ecosystem_inventory.py",
+      "path": "conversation-memory/scripts/build_ecosystem_inventory.py",
+      "repo": "LuxMemory/conversation-memory",
+      "lines": 90,
+      "type": "conversation_memory"
+    },
+    {
+      "name": "validate_latent_signal_transformations.py",
+      "path": "conversation-memory/scripts/validate_latent_signal_transformations.py",
+      "repo": "LuxMemory/conversation-memory",
+      "lines": 45,
+      "type": "conversation_memory"
+    }
+  ]
+}
